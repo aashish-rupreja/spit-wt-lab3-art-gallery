@@ -1,0 +1,31 @@
+.header,
+.footer,
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+}
+
+#footer-info {
+    display: flex;
+    padding: 15px 20px;
+    gap: 10px;
+}
+
+.contact-heading {
+    padding: 0 5px;
+    font-size: larger;
+}
+
+.contact-item, .link-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    padding: 5px;
+}
