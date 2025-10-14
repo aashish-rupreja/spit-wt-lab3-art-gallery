@@ -4,6 +4,18 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.header {
+    background-color: var(--color-primary);
+}
+
+.header .brand-logo {
+    color: var(--color-text-alt);
+}
+
+.brand-logo {
+    font-size: 3rem;
+}
+
 a {
     text-decoration: none;
     color: var(--color-text);
@@ -20,10 +32,4 @@ a:hover {
 
 .footer .alt-text {
     color: var(--color-text-alt);
-}
-
-#brand-logo {
-    color: var(--color-text-alt);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3rem;
 }
