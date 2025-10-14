@@ -13,6 +13,10 @@ body {
 }
 
 .brand-logo {
+<<<<<<< HEAD
+=======
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+>>>>>>> cfb889ebfe6ebc336623885c7ba8edbacfdef3cb
     font-size: 3rem;
 }
 
