@@ -6,12 +6,24 @@
     align-items: center;
 }
 
-.footer {
-    flex-direction: column;
+.header > #h-center {
+    flex: 3 1 300px;
+    display: flex;
+    justify-content: center;
 }
 
-.content {
-    height: 100%;
+#h-right, #h-left {
+    height: 100px;
+    width: 100px;
+    background-color: var(--color-text-alt);
+}
+
+#update-container {
+    min-height: 440px;
+}
+
+.footer {
+    flex-direction: column;
 }
 
 #footer-info {
