@@ -13,11 +13,17 @@ a:hover {
     color: var(--color-primary-light);
 }
 
-.contact-heading {
-    color: var(--color-text-alt);
-}
-
 .footer {
     background-color: var(--color-primary);
     color: var(--color-text);
+}
+
+.footer .alt-text {
+    color: var(--color-text-alt);
+}
+
+#brand-logo {
+    color: var(--color-text-alt);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
 }

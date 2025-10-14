@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.footer {
+    flex-direction: column;
+}
+
 .content {
     height: 100%;
 }
@@ -16,9 +20,27 @@
     gap: 10px;
 }
 
+#brand-and-contact-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .contact-heading {
     padding: 0 5px;
     font-size: larger;
+}
+
+#brand-details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand-details > #brand-info {
+    max-width: 60vw;
 }
 
 .contact-item, .link-item {
