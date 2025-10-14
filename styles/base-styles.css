@@ -12,6 +12,12 @@ body {
     color: var(--color-text-alt);
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-primary);
+}
+
 .brand-logo {
     font-size: 3rem;
 }
