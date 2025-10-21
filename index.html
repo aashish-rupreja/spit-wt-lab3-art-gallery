@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/styles/base-styles.css" />
     <link rel="stylesheet" href="/styles/base-layout.css" />
     <script src="https://kit.fontawesome.com/469019d5d2.js" crossorigin="anonymous" ></script>
-    <script src="scripts/spa-engine/spa-engine.js" type="module" defer></script>
+    <script src="scripts/spa-engine/spa-router.js" type="module" defer></script>
     <title>Virtual Art Gallery</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
     </header>
 
     <nav class="nav-bar">
-      <div class="link-item"><a href="#">Explore Art</a></div>
+      <div class="link-item"><a href="#" data-spa-link="homepage">Explore Art</a></div>
       <div class="link-item"><a href="#">Categories</a></div>
       <div class="link-item"><a href="#">Favorites</a></div>
     </nav>
@@ -66,7 +66,7 @@
             <div class="alt-text">Contact</div>
             <div class="link-item"><a href="#">About Us</a></div>
             <div class="link-item"><a href="#">Contact Us</a></div>
-            <div class="link-item"><a href="#">Upcoming Events</a></div>
+            <div class="link-item"><a href="#" data-spa-link="upcoming-events">Upcoming Events</a></div>
           </div>
         </div>
       </div>
