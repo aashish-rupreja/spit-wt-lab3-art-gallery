@@ -1,0 +1,156 @@
+:root {
+  --bg-main: #f3f0ff;
+  --bg-surface: #ffffff;
+  --primary: #a77bca;
+  --secondary: #6c5b9a;
+  --text-dark: #4b3f72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--bg-surface);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--primary);
+}
+
+/* Main */
+main {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+main h2 {
+  color: var(--secondary);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.intro-text {
+  color: #6a618b;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.event-card {
+  background-color: var(--bg-surface);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(75, 63, 114, 0.2);
+  padding: 1.2rem;
+  text-align: left;
+  max-width: 330px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 6px 16px rgba(75, 63, 114, 0.3);
+}
+
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.9rem;
+}
+
+.event-card h3 {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.event-card p {
+  font-size: 0.92rem;
+  color: #6a618b;
+  margin-bottom: 0.5rem;
+}
+
+.register-btn {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--bg-surface);
+  border-top: 1px solid #ddd;
+  color: var(--text-dark);
+  border-radius: 20px 20px 0 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding: 2rem 1.5rem;
+  }
+}
