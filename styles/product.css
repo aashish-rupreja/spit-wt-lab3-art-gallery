@@ -1,0 +1,139 @@
+:root {
+  --bg-main: #f4f3ff;
+  --bg-card: #ffffff;
+  --primary: #6b5b95;
+  --secondary: #b8a9c9;
+  --text-dark: #3e3a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* --------- MAIN ARTWORK CARD --------- */
+.art-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.art-image img {
+  width: 350px;
+  height: 270px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.art-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.art-details p {
+  font-size: 1rem;
+}
+
+.fav-btn {
+  margin-top: 0.8rem;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.fav-btn:hover {
+  background-color: var(--secondary);
+}
+
+/* --------- DESCRIPTION --------- */
+.art-description {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 2rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* --------- OTHER ARTWORKS SECTION --------- */
+.other-works {
+  margin-top: 1rem;
+}
+
+.other-works h2 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.art-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.art-item {
+  background-color: var(--bg-card);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.art-item img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.art-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.art-item p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
