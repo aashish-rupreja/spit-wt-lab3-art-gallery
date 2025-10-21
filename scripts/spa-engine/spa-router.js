@@ -14,7 +14,7 @@ async function updateMainContent(event) {
         document.title = pageDetails.title;
         const styleLink = document.createElement('link');
         styleLink.rel = 'stylesheet';
-        styleLink.href = `/styles/${pageDetails.page}.css`;
+        styleLink.href = `styles/${pageDetails.page}.css`;
         document.head.appendChild(styleLink);
         return html; // returned for potential further use
     } catch (err) {
