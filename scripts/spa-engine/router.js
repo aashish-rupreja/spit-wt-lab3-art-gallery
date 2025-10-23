@@ -1,5 +1,4 @@
 import { routes } from "./routes.js";
-console.log("LOLE");
 
 const updateContainer = document.getElementById("update-container");
 const pagePathPrefix = "pages/";
@@ -15,6 +14,7 @@ async function loadPage(path) {
     for (const linkElement of linkElements) {
         if (linkElement.href.includes(pageName)) {
             applyStyle = false;
+            break;
         }
     }
     if (applyStyle) {
