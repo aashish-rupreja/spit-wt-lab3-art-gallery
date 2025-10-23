@@ -8,8 +8,8 @@ body {
     background-color: var(--primary);
 }
 
-.header .brand-logo {
-    color: var(--text-light);
+#h-left, #h-right {
+    background-color: var(--text-light);
 }
 
 .nav-bar {
@@ -19,7 +19,7 @@ body {
 }
 
 .brand-logo {
-    font-size: 3rem;
+    font-size: 3rem !important;
 }
 
 #update-container {
@@ -40,6 +40,10 @@ a:hover {
     color: var(--text-light);
 }
 
-.footer .alt-text {
-    color: var(--text-light);
+.dark-text {
+    color: var(--text-dark);
+}
+
+.footer .dark-text {
+    font-size: larger;
 }

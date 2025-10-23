@@ -15,7 +15,6 @@
 #h-right, #h-left {
     height: 100px;
     width: 100px;
-    background-color: var(--color-text-alt);
 }
 
 #update-container {
