@@ -9,12 +9,22 @@ async function loadPage(path) {
     const pageContent = await fetch(`${pagePathPrefix}${pageName}.html`);
     const pageHtml = await pageContent.text();
 
-    const styleLink = document.createElement('link');
-    styleLink.rel = 'stylesheet';
-    styleLink.href = `${stylePathPrefix}${pageName}.css`;
-    document.head.appendChild(styleLink);
+    const linkElements = document.getElementsByTagName('link');
+    let applyStyle = true;
+    for (const linkElement of linkElements) {
+        if (linkElement.href.includes(pageName)) {
+            applyStyle = false;
+            break;
+        }
+    }
+    if (applyStyle) {
+        const styleLink = document.createElement('link');
+        styleLink.rel = 'stylesheet';
+        styleLink.href = `${stylePathPrefix}${pageName}.css`;
+        document.head.appendChild(styleLink);
+    }
 
-    path != "/" ? document.title = document.querySelector(`a[href="${path}"]`).innerText:'';
+    // path != "/" ? document.title = document.querySelector(`a[href="${path}"]`).innerText : '';
     updateContainer.innerHTML = pageHtml;
 }
 

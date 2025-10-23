@@ -1,9 +1,10 @@
 #category-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
+    width: 50%;
 }
 
 .category-grid {
