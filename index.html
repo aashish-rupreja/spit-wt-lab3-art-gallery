@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/base-styles.css" />
     <link rel="stylesheet" href="styles/base-layout.css" />
     <script src="https://kit.fontawesome.com/469019d5d2.js" crossorigin="anonymous" ></script>
-    <script src="scripts/spa-engine/spa-router.js" type="module" defer></script>
+    <script src="scripts/spa-engine/main.js" type="module" defer></script>
     <title>Virtual Art Gallery</title>
   </head>
   <body>
@@ -22,9 +22,9 @@
     </header>
 
     <nav class="nav-bar">
-      <div class="link-item"><a href="#" data-spa-link="homepage">Explore Art</a></div>
-      <div class="link-item"><a href="#">Categories</a></div>
-      <div class="link-item"><a href="#">Favorites</a></div>
+      <div class="link-item"><a href="/explore-art" data-link>Explore Art</a></div>
+      <div class="link-item"><a href="/categories" data-link>Categories</a></div>
+      <div class="link-item"><a href="/favorites" data-link>Favorites</a></div>
     </nav>
 
     <main>
@@ -64,9 +64,9 @@
           </div>
           <div id="links">
             <div class="alt-text">Contact</div>
-            <div class="link-item"><a href="#">About Us</a></div>
-            <div class="link-item"><a href="#">Contact Us</a></div>
-            <div class="link-item"><a href="#" data-spa-link="upcoming-events">Upcoming Events</a></div>
+            <div class="link-item"><a href="/about-us" data-link>About Us</a></div>
+            <div class="link-item"><a href="/contact-us" data-link>Contact Us</a></div>
+            <div class="link-item"><a href="/upcoming-events" data-link>Upcoming Events</a></div>
           </div>
         </div>
       </div>

@@ -1,17 +1,21 @@
 import { routes } from "./routes.js";
 
 const updateContainer = document.getElementById("update-container");
+const pagePathPrefix = "pages/";
+const stylePathPrefix = "styles/";
+
 async function loadPage(path) {
-    const pageName = routes[path] || "pages/404";
-    const pageContent = await fetch(`${pageName}.html`);
+    const pageName = routes[path] || `${pagePathPrefix}404`;
+    const pageContent = await fetch(`${pagePathPrefix}/${pageName}.html`);
     const pageHtml = await pageContent.text();
-    updateContainer.innerHTML = pageHtml;
-    // document.title = pageDetails.title;
+
     const styleLink = document.createElement('link');
     styleLink.rel = 'stylesheet';
-    styleLink.href = `styles/${pageName}.css`;
+    styleLink.href = `${stylePathPrefix}/${pageName}.css`;
     document.head.appendChild(styleLink);
-    window.scrollTo(0, 0);
+
+    path != "/" ? document.title = document.querySelector(`a[href="${path}"]`).innerText:'';
+    updateContainer.innerHTML = pageHtml;
 }
 
 export function handleRoute() {
