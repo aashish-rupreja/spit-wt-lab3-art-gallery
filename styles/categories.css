@@ -1,0 +1,17 @@
+#category-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-grid {
+    width: 200px;
+    height: 100px;
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: 2px solid var(--secondary);
+    text-align: center;
+    vertical-align: middle;
+}
