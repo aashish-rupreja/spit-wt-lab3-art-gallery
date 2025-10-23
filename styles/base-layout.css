@@ -18,7 +18,8 @@
 }
 
 #update-container {
-    min-height: 440px;
+    height: 60vh;
+    min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
