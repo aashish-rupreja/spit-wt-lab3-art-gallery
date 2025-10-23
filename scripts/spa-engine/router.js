@@ -6,12 +6,12 @@ const stylePathPrefix = "styles/";
 
 async function loadPage(path) {
     const pageName = routes[path] || `${pagePathPrefix}404`;
-    const pageContent = await fetch(`${pagePathPrefix}/${pageName}.html`);
+    const pageContent = await fetch(`${pagePathPrefix}${pageName}.html`);
     const pageHtml = await pageContent.text();
 
     const styleLink = document.createElement('link');
     styleLink.rel = 'stylesheet';
-    styleLink.href = `${stylePathPrefix}/${pageName}.css`;
+    styleLink.href = `${stylePathPrefix}${pageName}.css`;
     document.head.appendChild(styleLink);
 
     path != "/" ? document.title = document.querySelector(`a[href="${path}"]`).innerText:'';
