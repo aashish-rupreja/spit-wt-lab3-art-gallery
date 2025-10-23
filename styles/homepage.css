@@ -78,7 +78,7 @@ main {
 
 .art-details p {
   font-size: 0.95rem;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 .art-details strong {

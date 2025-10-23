@@ -5,17 +5,17 @@ body {
 }
 
 .header {
-    background-color: var(--color-primary);
+    background-color: var(--primary);
 }
 
 .header .brand-logo {
-    color: var(--color-text-alt);
+    color: var(--text-light);
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--color-primary);
+    background-color: var(--primary);
 }
 
 .brand-logo {
@@ -24,18 +24,18 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--text-light);
 }
 
 a:hover {
-    color: var(--color-primary-light);
+    color: var(--secondary);
 }
 
 .footer {
-    background-color: var(--color-primary);
-    color: var(--color-text);
+    background-color: var(--primary);
+    color: var(--text-light);
 }
 
 .footer .alt-text {
-    color: var(--color-text-alt);
+    color: var(--text-light);
 }
