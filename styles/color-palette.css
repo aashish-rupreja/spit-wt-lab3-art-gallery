@@ -1,10 +1,10 @@
 :root {
-  --bg-main: #f3f0ff;
+  --bg-main: #f4f2ff;
   --bg-surface: #ffffff;
-  --primary: #a77bca;
-  --secondary: #6c5b9a;
-  --text-dark: #4b3f72;
-  --text-light: #6a618b;
-  --shadow-light: rgba(75, 63, 114, 0.2);
-  --shadow-dark: rgba(75, 63, 114, 0.3);
+  --primary: #9b6edb;
+  --secondary: #5e4b8b;
+  --text-dark: #1e1733;
+  --text-light: #f0ebff;
+  --shadow-light: rgba(94, 75, 139, 0.15);
+  --shadow-dark: rgba(94, 75, 139, 0.3);
 }
