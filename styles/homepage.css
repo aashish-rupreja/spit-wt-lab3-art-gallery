@@ -1,14 +1,3 @@
-:root {
-  --bg-main: #f3f0ff;
-  --bg-surface: #ffffff;
-  --primary: #a77bca;
-  --secondary: #6c5b9a;
-  --text-dark: #4b3f72;
-  --text-light: #6a618b;
-  --shadow-light: rgba(75, 63, 114, 0.2);
-  --shadow-dark: rgba(75, 63, 114, 0.3);
-}
-
 * {
   margin: 0;
   padding: 0;

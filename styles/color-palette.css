@@ -1,17 +1,10 @@
 :root {
-  /* Base / Neutral */
-  --color-bg: #ffffff;
-  --color-bg-alt: #f5f8ff;       /* soft blue-tinted background */
-  --color-text: #1e293b;         /* slate blue-gray, great contrast */
-  --color-text-alt: #d3dae4;         /* slate blue-gray, great contrast */
-  --color-border: #e2e8f0;       /* light neutral border */
-
-  /* Primary Brand (Blue) */
-  --color-primary: #3b82f6;        /* modern blue (Tailwind blue-500) */
-  --color-primary-light: #eff6ff; /* pale tint for backgrounds, cards, etc. */
-
-  /* Semantic */
-  --color-success: #16a34a; /* clean green */
-  --color-warning: #facc15; /* modern yellow */
-  --color-error: #dc2626;   /* bold red */
+  --bg-main: #f3f0ff;
+  --bg-surface: #ffffff;
+  --primary: #a77bca;
+  --secondary: #6c5b9a;
+  --text-dark: #4b3f72;
+  --text-light: #6a618b;
+  --shadow-light: rgba(75, 63, 114, 0.2);
+  --shadow-dark: rgba(75, 63, 114, 0.3);
 }
