@@ -22,6 +22,10 @@ body {
     font-size: 3rem;
 }
 
+#update-container {
+    height: fit-content;
+}
+
 a {
     text-decoration: none;
     color: var(--text-light);
