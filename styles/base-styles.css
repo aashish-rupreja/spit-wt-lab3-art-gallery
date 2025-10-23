@@ -8,10 +8,6 @@ body {
     background-color: var(--primary);
 }
 
-#h-left, #h-right {
-    background-color: var(--text-light);
-}
-
 .nav-bar {
     display: flex;
     justify-content: space-evenly;
@@ -42,6 +38,10 @@ a:hover {
 
 .dark-text {
     color: var(--text-dark);
+}
+
+.light-text {
+    color: var(--text-light);
 }
 
 .footer .dark-text {
