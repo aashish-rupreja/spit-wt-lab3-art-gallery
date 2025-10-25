@@ -1,5 +1,6 @@
 const routes = {
     "/": "homepage",
+    "/art": "art",
     "/explore-art": "explore-art",
     "/categories": "categories",
     "/about-us": "about-us",
