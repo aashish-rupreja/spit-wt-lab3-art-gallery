@@ -1,10 +1,20 @@
+#category-data {
+    display: flex;
+    flex-direction: column;
+}
+
+#categories>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
 #category-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    width: 50%;
 }
 
 .category-grid {
@@ -15,4 +25,23 @@
     border: 2px solid var(--secondary);
     text-align: center;
     vertical-align: middle;
+}
+
+.category-grid {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.category-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-grid h2 {
+    font-size: 1.2em;
+    text-align: center;
 }
