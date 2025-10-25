@@ -1,18 +1,16 @@
 const artName = window.location.search.slice(1).replaceAll("%20", " ");
 
 if (artName) {
-    console.log("Detected art:", artName);
     viewArt(artName);
 }
 
 async function viewArt(artName) {
-    console.log("Fetching art details for:", artName);
-
     const detailsDiv = document.getElementById("art-details");
     const contentDiv = document.getElementById("art-details-content");
+    const main = document.querySelector('nav + main');
 
     if (!detailsDiv || !contentDiv) {
-        console.error("❌ Missing art details container in DOM");
+        console.error("Missing art details container in DOM");
         return;
     }
 
@@ -28,18 +26,14 @@ async function viewArt(artName) {
 
         const art = await res.json();
 
+        main.style.background = `url(${art.art_image}) no-repeat`;
+
         contentDiv.innerHTML = `
-            <button id="back-btn">← Back</button>
             <h2>${art.art_name}</h2>
-            <img src="images/${art.art_name}.jpg" alt="${art.art_name}" />
             <p><strong>Artist:</strong> ${art.artist_name}</p>
             <p><strong>Year:</strong> ${art.year}</p>
             <p><strong>Description:</strong> ${art.description}</p>
         `;
-
-        document.getElementById("back-btn").addEventListener("click", () => {
-            window.history.back();
-        });
 
     } catch (err) {
         console.error(err);
