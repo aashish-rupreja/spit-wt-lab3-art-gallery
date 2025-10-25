@@ -39,19 +39,15 @@ function applyStyles(pageName) {
 
 function applyScripts(pageName) {
     const scriptElements = document.getElementsByTagName('script');
-    let applyScript = true;
     for (const scriptElement of scriptElements) {
         if (scriptElement.src.includes(pageName)) {
-            applyScript = false;
+            scriptElement.remove();
             break;
         }
     }
-    if (applyScript) {
-        const script = document.createElement('script');
-        script.src = `${scriptPathPrefix}${pageName}.js`;
-        script.type = "module";
-        document.body.appendChild(script);
-    }
+    const script = document.createElement('script');
+    script.src = `${scriptPathPrefix}${pageName}.js`;
+    document.body.appendChild(script);
 }
 
 export function handleRoute() {
