@@ -24,6 +24,12 @@ export function setUser(userData) {
     notifyListeners();
 }
 
+export function updateState(newState) {
+    state = { ...state, ...newState };
+    localStorage.setItem("appState", JSON.stringify(state));
+    listeners.forEach(fn => fn(state));
+}
+
 export function getUserState() {
     return appState.user;
 }
