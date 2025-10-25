@@ -22,19 +22,16 @@ async function loadPage(path, query = "") {
 
 function applyStyles(pageName) {
     const linkElements = document.getElementsByTagName('link');
-    let applyStyle = true;
     for (const linkElement of linkElements) {
         if (linkElement.href.includes(pageName)) {
-            applyStyle = false;
+            linkElement.remove();
             break;
         }
     }
-    if (applyStyle) {
-        const styleLink = document.createElement('link');
-        styleLink.rel = 'stylesheet';
-        styleLink.href = `${stylePathPrefix}${pageName}.css`;
-        document.head.appendChild(styleLink);
-    }
+    const styleLink = document.createElement('link');
+    styleLink.rel = 'stylesheet';
+    styleLink.href = `${stylePathPrefix}${pageName}.css`;
+    document.head.appendChild(styleLink);
 }
 
 function applyScripts(pageName) {
