@@ -21,12 +21,8 @@ async function viewArt() {
 
         const art = await res.json();
 
-        main.style.background = `url(${art.art_image}) no-repeat`;
-        main.style.padding = '0';
-        main.style.margin = '0';
-        main.style.width = '95vw';
-        main.style.height = '95vh';
-        
+        main.style.background = `url(${art.art_image})`;
+        main.classList.add("view-art-page");
 
         contentDiv.innerHTML = `
             <h2>${art.art_name}</h2>

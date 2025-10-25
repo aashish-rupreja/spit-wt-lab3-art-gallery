@@ -37,6 +37,7 @@ function applyStyles(pageName) {
 function applyScripts(pageName) {
     const scriptElements = document.getElementsByTagName('script');
     for (const scriptElement of scriptElements) {
+        if(scriptElement.src.includes("view-art")) scriptElement.remove();
         if (scriptElement.src.includes(pageName)) {
             scriptElement.remove();
             break;
@@ -50,6 +51,9 @@ function applyScripts(pageName) {
 export function handleRoute() {
     const path = window.location.pathname;
     const query = window.location.search;
+    const main = document.querySelector('nav + main');
+    main.classList.remove("view-art-page");
+    main.style.background = "";
     loadPage(path, query);
 }
 

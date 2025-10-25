@@ -1,3 +1,14 @@
+main.view-art-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+
 .art-details-view {
   display: none;
   background-color: var(--color-bg-alt);
