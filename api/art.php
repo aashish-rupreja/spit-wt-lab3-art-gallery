@@ -12,7 +12,7 @@ if (!$category_name) {
 
 try {
     $stmt = $pdo->prepare("
-        SELECT a.id, a.art_name, a.artist_name, a.year, c.id AS category_id
+        SELECT a.id, a.art_name, a.artist_name, a.year, a.art_image, c.id AS category_id
         FROM art a
         INNER JOIN art_category ac ON a.id = ac.art_id
         INNER JOIN category c ON ac.category_id = c.id

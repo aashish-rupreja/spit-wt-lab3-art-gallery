@@ -36,6 +36,11 @@ async function loadArt(categoryName) {
             a.setAttribute('data-link', '');
             a.appendChild(btn);
 
+            const img = document.createElement('img');
+            img.src = art.art_image;
+            img.alt = art.art_name;
+
+            card.appendChild(img);
             card.appendChild(details);
             card.appendChild(a);
 
