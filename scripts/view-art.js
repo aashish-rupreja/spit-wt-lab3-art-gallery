@@ -1,10 +1,5 @@
-const artName = window.location.search.slice(1).replaceAll("%20", " ");
-
-if (artName) {
-    viewArt(artName);
-}
-
-async function viewArt(artName) {
+viewArt();  
+async function viewArt() {
     const detailsDiv = document.getElementById("art-details");
     const contentDiv = document.getElementById("art-details-content");
     const main = document.querySelector('nav + main');
@@ -21,12 +16,17 @@ async function viewArt(artName) {
     contentDiv.innerHTML = "Loading...";
 
     try {
-        const res = await fetch(`api/view-art.php?name=${encodeURIComponent(artName)}`);
+        const res = await fetch(`api/view-art.php?name=${window.location.search.slice(1).replaceAll("%20", " ")}`);
         if (!res.ok) throw new Error("Failed to fetch art details");
 
         const art = await res.json();
 
         main.style.background = `url(${art.art_image}) no-repeat`;
+        main.style.padding = '0';
+        main.style.margin = '0';
+        main.style.width = '95vw';
+        main.style.height = '95vh';
+        
 
         contentDiv.innerHTML = `
             <h2>${art.art_name}</h2>

@@ -1,8 +1,7 @@
-const categoryName = window.location.search.slice(1);
-loadArt(categoryName);
-async function loadArt(categoryName) {
+loadArt();
+async function loadArt() {
     try {
-        const res = await fetch(`api/art.php?category=${categoryName}`);
+        const res = await fetch(`api/art.php?category=${ window.location.search.slice(1).replaceAll("%20", " ")}`);
         if (!res.ok) throw new Error('Failed to fetch art');
 
         const artPieces = await res.json();
