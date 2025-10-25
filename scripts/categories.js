@@ -1,13 +1,10 @@
-
 fetchCategories();
-
 async function fetchCategories() {
     try {
         const res = await fetch('./api/categories.php');
         if (!res.ok) throw new Error('Failed to fetch categories');
 
         const categories = await res.json();
-        console.log(categories);
         const container = document.getElementById('category-container');
         container.innerHTML = '';
 
