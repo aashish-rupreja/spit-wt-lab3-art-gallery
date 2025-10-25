@@ -11,7 +11,7 @@ CREATE TABLE art (
     id INT PRIMARY KEY AUTO_INCREMENT,
     art_name VARCHAR(100),
     artist_name VARCHAR(100),
-    year YEAR,
+    year VARCHAR(4),
     description TEXT
 );
 
