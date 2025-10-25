@@ -1,0 +1,43 @@
+.art-details-view {
+  display: none;
+  background-color: var(--color-bg-alt);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px var(--shadow-light);
+  margin-top: 2rem;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+#art-details-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+#art-details-content p {
+  margin: 0.5rem 0;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+#close-details {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#close-details:hover {
+  background-color: var(--secondary);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

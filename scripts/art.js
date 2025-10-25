@@ -27,10 +27,17 @@ async function loadArt(categoryName) {
             `;
 
             const btn = document.createElement('button');
+            btn.classList.add('view-btn');
+            btn.setAttribute('data-name', art.art_name)
             btn.textContent = 'View';
 
+            const a = document.createElement('a');
+            a.href = `/view-art?${art.art_name}`;
+            a.setAttribute('data-link', '');
+            a.appendChild(btn);
+
             card.appendChild(details);
-            card.appendChild(btn);
+            card.appendChild(a);
 
             container.appendChild(card);
         });
