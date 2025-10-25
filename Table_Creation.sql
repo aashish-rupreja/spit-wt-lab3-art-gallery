@@ -42,3 +42,9 @@ CREATE TABLE user_event (
     FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
     FOREIGN KEY (event_id) REFERENCES event(id) ON DELETE CASCADE
 );
+CREATE TABLE queries (
+    query_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    query_message VARCHAR(255),
+    FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
+);
