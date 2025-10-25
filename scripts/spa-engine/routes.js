@@ -8,6 +8,7 @@ const routes = {
     "/about-us": "about-us",
     "/contact-us": "contact-us",
     "/upcoming-events": "upcoming-events",
+    "/404": "404",
 }
 
 export { routes };
