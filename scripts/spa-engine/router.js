@@ -49,6 +49,7 @@ function applyScripts(pageName) {
     if (applyScript) {
         const script = document.createElement('script');
         script.src = `${scriptPathPrefix}${pageName}.js`;
+        script.type = "module";
         document.body.appendChild(script);
     }
 }
