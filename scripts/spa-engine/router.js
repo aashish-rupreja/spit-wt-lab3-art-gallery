@@ -43,6 +43,7 @@ function applyScripts(pageName) {
     for (const scriptElement of scriptElements) {
         if (scriptElement.src.includes(pageName)) {
             applyScript = false;
+            location.reload();
             break;
         }
     }
