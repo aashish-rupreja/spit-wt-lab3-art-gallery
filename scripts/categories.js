@@ -1,7 +1,6 @@
 
 fetchCategories();
 
-
 async function fetchCategories() {
     try {
         const res = await fetch('./api/categories.php');
@@ -14,7 +13,8 @@ async function fetchCategories() {
 
         categories.forEach(cat => {
             const link = document.createElement('a');
-            link.href = `art.php?category=${cat.id}`;
+            link.href = `/art?${cat.name}`;
+            link.setAttribute('data-link', '');
 
             const div = document.createElement('div');
             div.className = 'category-grid';
