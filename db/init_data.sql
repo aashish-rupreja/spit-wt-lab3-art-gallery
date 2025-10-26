@@ -69,12 +69,12 @@ INSERT INTO art_category (art_id, category_id) VALUES
 
 -- Baroque art
 INSERT INTO art (art_name, artist_name, year, description, art_image) VALUES
-('Girl with a Pearl Earring', 'Johannes Vermeer', '1665', 'Portrait of a girl with a pearl earring.', 'https://upload.wikimedia.org/wikipedia/commons/0/0f/1665_Girl_with_a_Pearl_Earring.jpg'),
-('The Night Watch', 'Rembrandt van Rijn', '1642', 'Militia company in dramatic lighting.', 'https://upload.wikimedia.org/wikipedia/commons/5/5a/The_Night_Watch_-_HD.jpg'),
+('Girl with a Pearl Earring', 'Johannes Vermeer', '1665', 'Portrait of a girl with a pearl earring.', 'https://cdn.britannica.com/33/194733-050-4CF75F31/Girl-with-a-Pearl-Earring-canvas-Johannes-1665.jpg'),
+('The Night Watch', 'Rembrandt van Rijn', '1642', 'Militia company in dramatic lighting.', 'https://smarthistory.org/wp-content/uploads/2022/07/SK-C-5.jpg'),
 ('Judith Slaying Holofernes', 'Artemisia Gentileschi', '1614', 'Dramatic biblical scene.', 'https://www.datocms-assets.com/103094/1688661508-1506165873655660-artemisia-giuditta-principale.jpg?auto=format%2Ccompress&cs=srgb&max-w=800%202344w'),
 ('The Calling of Saint Matthew', 'Caravaggio', '1600', 'Tenebrism lighting on Matthew.', 'https://primematters.com/sites/default/files/styles/article/public/2020-08/caravaggio-the-calling-of-st-matthew-1200x800-wikimedia-public-domain%20%281%29.jpg?h=10d202d3&itok=ie14dxvF'),
 ('David with the Head of Goliath', 'Caravaggio', '1610', 'Dramatic biblical scene.', 'https://www.caravaggio.org/assets/img/paintings/david-with-the-head-of-goliath.jpg'),
-('Las Meninas', 'Diego Velázquez', '1656', 'Court scene with princess.', 'https://upload.wikimedia.org/wikipedia/commons/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg'),
+('Las Meninas', 'Diego Velázquez', '1656', 'Court scene with princess.', 'https://cdn.britannica.com/70/239470-138-AABC2F15/Diego-Velazquez-Las-Meninas.jpg?w=800&h=450&c=crop'),
 ('The Triumph of Bacchus', 'Diego Velázquez', '1629', 'Bacchus celebrating wine.', 'https://upload.wikimedia.org/wikipedia/commons/5/5d/Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_%28Museo_del_Prado%2C_1628-29%29.jpg'),
 ('The Supper at Emmaus', 'Caravaggio', '1601', 'Biblical scene with dramatic lighting.', 'https://upload.wikimedia.org/wikipedia/commons/4/4d/1602-3_Caravaggio%2CSupper_at_Emmaus_National_Gallery%2C_London.jpg');
 
@@ -102,7 +102,7 @@ INSERT INTO art (art_name, artist_name, year, description, art_image) VALUES
 ('Girl with a Mandolin', 'Pablo Picasso', '1910', 'Early analytic cubism painting.', 'https://upload.wikimedia.org/wikipedia/en/1/1c/Pablo_Picasso%2C_1910%2C_Girl_with_a_Mandolin_%28Fanny_Tellier%29%2C_oil_on_canvas%2C_100.3_x_73.6_cm%2C_Museum_of_Modern_Art_New_York..jpg'),
 ('The Portuguese', 'Georges Braque', '1911', 'Cubist depiction of a man playing a guitar.', 'https://smarthistory.org/wp-content/uploads/2021/12/Braque-The-Portuguese-sm-scaled.jpg'),
 ('Man with a Guitar', 'Juan Gris', '1915', 'Cubist portrait with geometric forms.', 'https://arthive.com/res/media/img/oy1000/work/a66/534784.webp'),
-('Bottle and Fishes', 'Georges Braque', '1910', 'Still life with geometric abstraction.', 'https://uploads8.wikiart.org/images/georges-braque/bottle-and-fishes-1910.jpg!Large.jpg'),
+('Bottle and Fishes', 'Georges Braque', '1910', 'Still life with geometric abstraction.', 'https://emuseum.toledomuseum.org/internal/media/dispatcher/61284/preview'),
 ('Houses at L’Estaque', 'Georges Braque', '1908', 'Landscape painted in cubist style.', 'https://upload.wikimedia.org/wikipedia/en/a/ad/Georges_Braque%2C_1908%2C_Maisons_et_arbre%2C_oil_on_canvas%2C_40.5_x_32.5_cm%2C_Lille_M%C3%A9tropole_Museum_of_Modern%2C_Contemporary_and_Outsider_Art.jpg'),
 ('Seated Woman', 'Pablo Picasso', '1910', 'Fragmented depiction of a seated woman.', 'https://www.pablopicasso.org/assets/img/paintings/seated-woman.jpg');
 
