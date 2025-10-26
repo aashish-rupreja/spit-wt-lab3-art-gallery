@@ -15,6 +15,9 @@ async function loadPage(path, query = "") {
     const urlParams = new URLSearchParams(query);
     window.currentPageParams = Object.fromEntries(urlParams.entries());
 
+    const newUrl = query ? `${path}${query}` : path;
+    history.replaceState({}, "", newUrl);
+
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -24,8 +27,8 @@ async function loadPage(path, query = "") {
     await new Promise(resolve => setTimeout(resolve, 500));
     applyScripts(pageName);
     updateContainer.style.opacity = 1;
-
 }
+
 
 
 function applyStyles(pageName) {

@@ -8,12 +8,11 @@ document.addEventListener("click", (e) => {
     }
 });
 
-window.addEventListener("popstate", (e) => {
-    handleRoute(e.state);
+window.addEventListener("popstate", () => {
+    handleRoute(window.location.pathname + window.location.search);
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-    history.replaceState({}, "", window.location.pathname);
-    handleRoute();
+    history.replaceState({}, "", window.location.pathname + window.location.search);
+    handleRoute(window.location.pathname + window.location.search);
 });
-
