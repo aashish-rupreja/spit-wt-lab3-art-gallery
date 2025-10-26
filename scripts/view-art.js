@@ -13,7 +13,7 @@ async function viewArt() {
     if (grid) grid.style.display = "none";
 
     detailsDiv.style.display = "block";
-    contentDiv.innerHTML = "Loading...";
+    // contentDiv.innerHTML = "Loading...";
 
     try {
         const res = await fetch(`api/view-art.php?name=${window.location.search.slice(1).replaceAll("%20", " ")}`);
@@ -24,12 +24,12 @@ async function viewArt() {
         main.style.background = `url(${art.art_image}) center / 100vw 100vh no-repeat content-box`;
         main.classList.add("view-art-page");
 
-        contentDiv.innerHTML = `
-            <h2>${art.art_name}</h2>
-            <p><strong>Artist:</strong> ${art.artist_name}</p>
-            <p><strong>Year:</strong> ${art.year}</p>
-            <p><strong>Description:</strong> ${art.description}</p>
-        `;
+        // contentDiv.innerHTML = `
+        //     <h2>${art.art_name}</h2>
+        //     <p><strong>Artist:</strong> ${art.artist_name}</p>
+        //     <p><strong>Year:</strong> ${art.year}</p>
+        //     <p><strong>Description:</strong> ${art.description}</p>
+        // `;
 
     } catch (err) {
         console.error(err);
