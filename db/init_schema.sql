@@ -29,7 +29,8 @@ CREATE TABLE event (
     event_type TEXT,
     venue TEXT,
     event_datetime TEXT,
-    event_description TEXT
+    event_description TEXT,
+    event_thumbnail_url TEXT
 );
 
 CREATE TABLE art_category (

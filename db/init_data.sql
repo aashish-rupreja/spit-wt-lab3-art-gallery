@@ -122,3 +122,54 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 
 INSERT INTO art_category (art_id, category_id) VALUES
 (57,8),(58,8),(59,8),(60,8),(61,8),(62,8),(63,8),(64,8);
+
+
+INSERT INTO event (event_name, event_type, venue, event_datetime, event_description, event_thumbnail_url) VALUES
+(
+    'Impressions of Light: A Contemporary Take on Impressionism',
+    'Exhibition',
+    'Luna Art Gallery, New York',
+    '2025-11-08 18:00:00',
+    'An immersive exhibition exploring how modern artists reinterpret Impressionism through digital and mixed media. Featuring works by 15 international painters.',
+    'https://example.com/thumbnails/impressions-of-light.jpg'
+),
+(
+    'Meet the Artist: Clara Voss on Abstract Forms',
+    'Artist Talk',
+    'The Atrium Gallery, Chicago',
+    '2025-11-15 14:30:00',
+    'Join renowned abstract artist Clara Voss as she discusses her creative process, inspirations, and the philosophy behind her latest collection, “Fluid Dimensions.”',
+    'https://example.com/thumbnails/clara-voss-talk.jpg'
+),
+(
+    'Gallery Opening Night: The Spectrum Collection',
+    'Opening Reception',
+    'Spectrum Contemporary, Los Angeles',
+    '2025-11-22 19:00:00',
+    'Celebrate the grand opening of Spectrum Contemporary with a showcase of vibrant color theory and interactive light installations. Complimentary cocktails served.',
+    'https://example.com/thumbnails/spectrum-opening.jpg'
+),
+(
+    'Art & Wine: Modern Minimalism',
+    'Workshop',
+    'Canvas Collective, San Francisco',
+    '2025-12-03 17:00:00',
+    'A guided workshop exploring minimalism in art, featuring a tasting of regional wines. Materials provided; beginners welcome.',
+    'https://example.com/thumbnails/art-wine-minimalism.jpg'
+),
+(
+    'Beyond the Frame: Women Photographers in Focus',
+    'Exhibition',
+    'Nova Gallery, London',
+    '2025-12-10 10:00:00',
+    'A thought-provoking photography exhibition highlighting the work of emerging women photographers from around the globe.',
+    'https://example.com/thumbnails/women-photographers.jpg'
+),
+(
+    'Live Art Performance: The Sound of Color',
+    'Performance',
+    'Echo Arts Space, Berlin',
+    '2025-12-18 20:00:00',
+    'An experimental fusion of painting and sound, where artists create live visual works in response to improvised music.',
+    'https://example.com/thumbnails/sound-of-color.jpg'
+);
