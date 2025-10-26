@@ -11,14 +11,22 @@ async function loadPage(path, query = "") {
     const pageHtml = await pageContent.text();
 
     applyStyles(pageName);
-    applyScripts(pageName);
 
     const urlParams = new URLSearchParams(query);
     window.currentPageParams = Object.fromEntries(urlParams.entries());
 
-    // path != "/" ? document.title = document.querySelector(`a[href="${path}"]`).innerText : '';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    updateContainer.style.opacity = 0;
     updateContainer.innerHTML = pageHtml;
+    await new Promise(resolve => setTimeout(resolve, 500));
+    applyScripts(pageName);
+    updateContainer.style.opacity = 1;
+
 }
+
 
 function applyStyles(pageName) {
     const linkElements = document.getElementsByTagName('link');
@@ -37,7 +45,7 @@ function applyStyles(pageName) {
 function applyScripts(pageName) {
     const scriptElements = document.getElementsByTagName('script');
     for (const scriptElement of scriptElements) {
-        if(scriptElement.src.includes("view-art")) scriptElement.remove();
+        if (scriptElement.src.includes("view-art")) scriptElement.remove();
         if (scriptElement.src.includes(pageName)) {
             scriptElement.remove();
             break;

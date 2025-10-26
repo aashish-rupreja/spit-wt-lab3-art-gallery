@@ -19,9 +19,14 @@
     font-size: 2rem !important;
 }
 
+
 #update-container {
     height: fit-content;
+    transition: opacity 0.5s ease;
+    opacity: 1;
 }
+
+
 
 a {
     text-decoration: none;
