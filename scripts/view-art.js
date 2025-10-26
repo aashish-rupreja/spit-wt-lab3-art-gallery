@@ -21,7 +21,7 @@ async function viewArt() {
 
         const art = await res.json();
 
-        main.style.background = `url(${art.art_image})`;
+        main.style.background = `url(${art.art_image}) center / 100vw 100vh no-repeat content-box`;
         main.classList.add("view-art-page");
 
         contentDiv.innerHTML = `
