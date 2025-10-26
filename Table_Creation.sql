@@ -1,4 +1,5 @@
-CREATE DATABASE LAB3;
+CREATE DATABASE IF NOT EXISTS LAB3;
+USE LAB3;
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
     firstname VARCHAR(50),
@@ -7,6 +8,7 @@ CREATE TABLE user (
     email_address VARCHAR(100) UNIQUE,
     password VARCHAR(255)
 );
+
 CREATE TABLE art (
     id INT PRIMARY KEY AUTO_INCREMENT,
     art_name VARCHAR(100),
@@ -28,6 +30,7 @@ CREATE TABLE event (
     event_datetime DATETIME,
     event_description TEXT
 );
+
 CREATE TABLE art_category (
     art_id INT,
     category_id INT,
@@ -35,6 +38,7 @@ CREATE TABLE art_category (
     FOREIGN KEY (art_id) REFERENCES art(id) ON DELETE CASCADE,
     FOREIGN KEY (category_id) REFERENCES category(id) ON DELETE CASCADE
 );
+
 CREATE TABLE user_event (
     user_id INT,
     event_id INT,
@@ -42,6 +46,7 @@ CREATE TABLE user_event (
     FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
     FOREIGN KEY (event_id) REFERENCES event(id) ON DELETE CASCADE
 );
+
 CREATE TABLE queries (
     query_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
