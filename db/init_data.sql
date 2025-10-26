@@ -131,7 +131,7 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'Luna Art Gallery, New York',
     '2025-11-08 18:00:00',
     'An immersive exhibition exploring how modern artists reinterpret Impressionism through digital and mixed media. Featuring works by 15 international painters.',
-    'https://example.com/thumbnails/impressions-of-light.jpg'
+    'https://i.etsystatic.com/27194149/r/il/68e04f/3948317289/il_570xN.3948317289_rmg8.jpg'
 ),
 (
     'Meet the Artist: Clara Voss on Abstract Forms',
@@ -139,7 +139,7 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'The Atrium Gallery, Chicago',
     '2025-11-15 14:30:00',
     'Join renowned abstract artist Clara Voss as she discusses her creative process, inspirations, and the philosophy behind her latest collection, “Fluid Dimensions.”',
-    'https://example.com/thumbnails/clara-voss-talk.jpg'
+    'https://images.squarespace-cdn.com/content/v1/5f10a7f0e4041a480cbbf0be/117d53db-1184-4672-bc87-d7c792cc9cf1/Serena+Chu_PublicArtImage.jpg'
 ),
 (
     'Gallery Opening Night: The Spectrum Collection',
@@ -147,7 +147,7 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'Spectrum Contemporary, Los Angeles',
     '2025-11-22 19:00:00',
     'Celebrate the grand opening of Spectrum Contemporary with a showcase of vibrant color theory and interactive light installations. Complimentary cocktails served.',
-    'https://example.com/thumbnails/spectrum-opening.jpg'
+    'https://www.shutterstock.com/image-photo/tokyo-japan-september-20-2018-600nw-1483381934.jpg'
 ),
 (
     'Art & Wine: Modern Minimalism',
@@ -155,7 +155,7 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'Canvas Collective, San Francisco',
     '2025-12-03 17:00:00',
     'A guided workshop exploring minimalism in art, featuring a tasting of regional wines. Materials provided; beginners welcome.',
-    'https://example.com/thumbnails/art-wine-minimalism.jpg'
+    'https://www.shutterstock.com/image-vector/vector-illustration-depicting-bottles-wine-260nw-2501551181.jpg'
 ),
 (
     'Beyond the Frame: Women Photographers in Focus',
@@ -163,7 +163,7 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'Nova Gallery, London',
     '2025-12-10 10:00:00',
     'A thought-provoking photography exhibition highlighting the work of emerging women photographers from around the globe.',
-    'https://example.com/thumbnails/women-photographers.jpg'
+    'https://media.istockphoto.com/id/1530807718/photo/young-latin-woman-artist-selling-her-art-at-outdoor-market.jpg?s=612x612&w=0&k=20&c=c9tPwgBGWB96GCLLQ7uhX0vNE0iyiWP_I0R_znpI8R0='
 ),
 (
     'Live Art Performance: The Sound of Color',
@@ -171,5 +171,5 @@ INSERT INTO event (event_name, event_type, venue, event_datetime, event_descript
     'Echo Arts Space, Berlin',
     '2025-12-18 20:00:00',
     'An experimental fusion of painting and sound, where artists create live visual works in response to improvised music.',
-    'https://example.com/thumbnails/sound-of-color.jpg'
+    'https://images.stockcake.com/public/2/3/9/2397d77f-af92-4b51-8bb9-d60d138cf4d0_large/vibrant-art-exhibition-stockcake.jpg'
 );
