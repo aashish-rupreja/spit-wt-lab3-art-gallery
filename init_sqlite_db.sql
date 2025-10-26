@@ -1,4 +1,62 @@
-USE LAB3;
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE user (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    firstname TEXT,
+    lastname TEXT,
+    phone_number TEXT,
+    email_address TEXT UNIQUE,
+    password TEXT
+);
+
+CREATE TABLE art (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    art_name TEXT,
+    artist_name TEXT,
+    year TEXT,
+    description TEXT,
+    art_image TEXT DEFAULT ''
+);
+
+CREATE TABLE category (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+);
+
+CREATE TABLE event (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    event_name TEXT,
+    event_type TEXT,  -- 'Online' or 'Offline'
+    venue TEXT,
+    event_datetime TEXT,
+    event_description TEXT
+);
+
+CREATE TABLE art_category (
+    art_id INTEGER,
+    category_id INTEGER,
+    PRIMARY KEY (art_id, category_id),
+    FOREIGN KEY (art_id) REFERENCES art(id) ON DELETE CASCADE,
+    FOREIGN KEY (category_id) REFERENCES category(id) ON DELETE CASCADE
+);
+
+CREATE TABLE user_event (
+    user_id INTEGER,
+    event_id INTEGER,
+    PRIMARY KEY (user_id, event_id),
+    FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
+    FOREIGN KEY (event_id) REFERENCES event(id) ON DELETE CASCADE
+);
+
+CREATE TABLE queries (
+    query_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    query_message TEXT,
+    FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE
+);
+
+
+-- Categories
 INSERT INTO category (name) VALUES
 ('Impressionism'),
 ('Renaissance'),
@@ -9,7 +67,7 @@ INSERT INTO category (name) VALUES
 ('Cubism'),
 ('Pop Art');
 
-
+-- Art and art_category associations
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Starry Night', 'Vincent van Gogh', '1889', 'A famous painting of a swirling night sky.'),
 ('Water Lilies', 'Claude Monet', '1906', 'Beautiful pond with water lilies.'),
@@ -23,7 +81,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),(7,1),(8,1);
 
-
+-- Renaissance art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Mona Lisa', 'Leonardo da Vinci', '1503', 'The iconic portrait with a mysterious smile.'),
 ('The Last Supper', 'Leonardo da Vinci', '1498', 'Jesus and disciples at the last supper.'),
@@ -37,7 +95,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (9,2),(10,2),(11,2),(12,2),(13,2),(14,2),(15,2),(16,2);
 
-
+-- Surrealism art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('The Persistence of Memory', 'Salvador Dalí', '1931', 'Surreal painting with melting clocks.'),
 ('The Elephants', 'Salvador Dalí', '1948', 'Elephants with spindly legs.'),
@@ -51,7 +109,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (17,3),(18,3),(19,3),(20,3),(21,3),(22,3),(23,3),(24,3);
 
-
+-- Expressionism art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('The Scream', 'Edvard Munch', '1893', 'Expressionist depiction of existential angst.'),
 ('The Dance of Life', 'Edvard Munch', '1899', 'Dance scene with vivid colors.'),
@@ -65,7 +123,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (25,4),(26,4),(27,4),(28,4),(29,4),(30,4),(31,4),(32,4);
 
-
+-- Baroque art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Girl with a Pearl Earring', 'Johannes Vermeer', '1665', 'Portrait of a girl with a pearl earring.'),
 ('The Night Watch', 'Rembrandt van Rijn', '1642', 'Militia company in dramatic lighting.'),
@@ -79,7 +137,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (33,5),(34,5),(35,5),(36,5),(37,5),(38,5),(39,5),(40,5);
 
-
+-- Modern Art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Composition VII', 'Wassily Kandinsky', '1913', 'Abstract composition of color and form.'),
 ('Broadway Boogie Woogie', 'Piet Mondrian', '1942', 'Geometric abstraction inspired by NYC.'),
@@ -93,7 +151,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (41,6),(42,6),(43,6),(44,6),(45,6),(46,6),(47,6),(48,6);
 
-
+-- Cubism
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Les Demoiselles d’Avignon', 'Pablo Picasso', '1907', 'Groundbreaking cubist work depicting five nude women.'),
 ('Violin and Candlestick', 'Georges Braque', '1910', 'Cubist still life with fragmented shapes.'),
@@ -107,7 +165,7 @@ INSERT INTO art (art_name, artist_name, year, description) VALUES
 INSERT INTO art_category (art_id, category_id) VALUES
 (49,7),(50,7),(51,7),(52,7),(53,7),(54,7),(55,7),(56,7);
 
-
+-- Pop Art
 INSERT INTO art (art_name, artist_name, year, description) VALUES
 ('Campbell’s Soup Cans', 'Andy Warhol', '1962', 'Series of soup can paintings.'),
 ('Marilyn Diptych', 'Andy Warhol', '1962', 'Portraits of Marilyn Monroe using silkscreen.'),
