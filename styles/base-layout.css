@@ -1,4 +1,9 @@
-.header,
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer,
 .main-nav {
     display: flex;
@@ -6,13 +11,14 @@
     align-items: center;
 }
 
-.header > #h-center {
+.header>#h-center {
     flex: 3 1 300px;
     display: flex;
     justify-content: center;
 }
 
-#h-right, #h-left {
+#h-right,
+#h-left {
     height: 100px;
     width: 100px;
 }
@@ -54,11 +60,12 @@
     align-items: center;
 }
 
-#brand-details > #brand-info {
+#brand-details>#brand-info {
     max-width: 60vw;
 }
 
-.contact-item, .link-item {
+.contact-item,
+.link-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
