@@ -18,18 +18,38 @@ main {
   margin: auto;
 }
 
-/* Sections */
-.category-section {
+/* Unified Section Styles */
+.category-section,
+.timeline-century {
   margin-bottom: 3.5rem;
   text-align: center;
+  padding: 1rem 0;
 }
 
-.category-section h2 {
+.category-section h2,
+.timeline-century h2 {
   color: var(--secondary);
   margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Decorative underline for both */
+.category-section h2::after,
+.timeline-century h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 2px;
 }
 
 /* Containers */
@@ -132,23 +152,10 @@ main {
   transform: scale(1.05);
 }
 
-/* Timeline Specific */
+/* Timeline Container */
 #timeline-container {
   text-align: center;
   padding: 2rem 1rem;
-}
-
-.timeline-century {
-  margin-bottom: 4rem;
-}
-
-.timeline-century h2 {
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  margin-bottom: 1rem;
-  border-left: 5px solid var(--primary);
-  padding-left: 10px;
-  text-align: left;
 }
 
 /* Responsive */
