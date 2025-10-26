@@ -6,7 +6,7 @@ su appuser <<'EOF'
 REPO_URL="https://github.com/aashish-rupreja/spit-wt-lab3-art-gallery.git"
 TARGET_DIR="/var/www/html"
 BRANCH="scrap-user-handling"
-DB_FILE="$TARGET_DIR/db/LAB3.db"
+DB_FILE="$TARGET_DIR/db/kalakriti_data.db"
 
 # Pull or clone the repo
 if [ -d "$TARGET_DIR/.git" ]; then
