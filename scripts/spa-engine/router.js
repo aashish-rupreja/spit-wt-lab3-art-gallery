@@ -54,6 +54,7 @@ export function handleRoute() {
     const main = document.querySelector('nav + main');
     main.classList.remove("view-art-page");
     main.style.background = "";
+    main.style.width = "100vw";
     loadPage(path, query);
 }
 

@@ -1,6 +1,7 @@
 fetchCategories();
 async function fetchCategories() {
     try {
+        document.querySelector('main').style.maxWidth = '1200px';
         const res = await fetch('./api/categories.php');
         if (!res.ok) throw new Error('Failed to fetch categories');
 

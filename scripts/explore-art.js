@@ -2,6 +2,7 @@ loadExploreArt();
 async function loadExploreArt() {
     try {
         // Fetch categories
+        document.querySelector('main').style.maxWidth = '1200px';
         const resCats = await fetch("../api/categories.php");
         if (!resCats.ok) throw new Error("Failed to fetch categories");
         const categories = await resCats.json();
