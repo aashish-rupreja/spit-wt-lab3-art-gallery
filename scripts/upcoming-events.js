@@ -1,6 +1,4 @@
-// Load events when the page is ready
-document.addEventListener("DOMContentLoaded", loadEvents);
-
+loadEvents();
 async function loadEvents() {
     const eventsContainer = document.getElementById("events-container");
     eventsContainer.innerHTML = "<p>Loading events...</p>";
@@ -31,6 +29,7 @@ function renderEvents(result) {
                     <p><strong>Venue:</strong> ${event.venue}</p>
                     <p><strong>Date & Time:</strong> ${new Date(event.event_datetime).toLocaleString()}</p>
                     <p>${event.event_description}</p>
+                    <button class="register-btn">Register</button>
                 </div>
             </div>
         `).join("");

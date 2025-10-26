@@ -24,6 +24,13 @@ main h2 {
   margin: 0 auto 2.5rem;
 }
 
+#events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
 /* Events Grid */
 .events-grid {
   display: grid;
@@ -40,6 +47,9 @@ main h2 {
   text-align: left;
   max-width: 330px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .event-card:hover {
@@ -76,6 +86,7 @@ main h2 {
   padding: 0.6rem 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: auto;
 }
 
 .register-btn:hover {
@@ -94,6 +105,7 @@ main h2 {
   .events-grid {
     grid-template-columns: 1fr;
   }
+
   main {
     padding: 2rem 1.5rem;
   }
