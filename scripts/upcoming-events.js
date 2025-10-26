@@ -29,7 +29,9 @@ function renderEvents(result) {
                     <p><strong>Venue:</strong> ${event.venue}</p>
                     <p><strong>Date & Time:</strong> ${new Date(event.event_datetime).toLocaleString()}</p>
                     <p>${event.event_description}</p>
-                    <button class="register-btn">Register</button>
+                    <a href="/contact-us" data-link>
+                        <button class="register-btn">Register</button>
+                    </a>
                 </div>
             </div>
         `).join("");
