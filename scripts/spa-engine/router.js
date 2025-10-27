@@ -62,7 +62,7 @@ function applyScripts(pageName) {
 export function handleRoute() {
     const path = window.location.pathname;
     const query = window.location.search;
-    const main = document.querySelector('nav + main');
+    const main = document.querySelector('main');
     main.classList.remove("view-art-page");
     main.style.background = "";
     main.style.maxWidth = "";
