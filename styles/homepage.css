@@ -62,7 +62,7 @@ h1, .subtitle {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 4rem;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   padding: 1rem 0;
