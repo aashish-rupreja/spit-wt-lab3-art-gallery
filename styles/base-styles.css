@@ -16,7 +16,8 @@
 }
 
 .brand-logo {
-    font-size: 2rem !important;
+    width: 300px;
+    mix-blend-mode: multiply;
 }
 
 
