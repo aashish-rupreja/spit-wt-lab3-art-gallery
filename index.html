@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/color-palette.css" />
-    <link rel="stylesheet" href="styles/base-styles.css" />
-    <link rel="stylesheet" href="styles/base-layout.css" />
-    <link rel="stylesheet" href="styles/homepage.css" />
-    <script src="https://kit.fontawesome.com/469019d5d2.js" crossorigin="anonymous" ></script>
-    <script src="scripts/spa-engine/main.js" type="module" defer></script>
-    <title>Kalakriti by GCA</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="/" data-link>
-        <div id="h-center">
-          <img src="./images/logo-cropped.jpg" alt="logo">
-          <!-- <div class="brand-logo dark-text">Kalakriti: A Virtual Art Gallery</div> -->
-        </div>
-      </a>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/color-palette.css" />
+  <link rel="stylesheet" href="styles/base-styles.css" />
+  <link rel="stylesheet" href="styles/base-layout.css" />
+  <link rel="stylesheet" href="styles/homepage.css" />
+  <script src="https://kit.fontawesome.com/469019d5d2.js" crossorigin="anonymous"></script>
+  <script src="scripts/spa-engine/main.js" type="module" defer></script>
+  <title>Kalakriti by GCA</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/" data-link>
+      <div id="h-center">
+        <img class="brand-logo" src="./images/logo-cropped.jpg" alt="logo">
+      </div>
+    </a>
     <nav class="nav-bar">
       <div class="link-item"><a href="/explore-art" data-link>Explore Art</a></div>
       <div class="link-item"><a href="/categories" data-link>Categories</a></div>
+      <div class="link-item"><a href="/upcoming-events" data-link>Upcoming Events</a></div>
     </nav>
+  </header>
 
-    <main>
-      <section id="update-container" class="fade-transition"></section>
-    </main>
+  <main>
+    <section id="update-container" class="fade-transition"></section>
+  </main>
 
-    <footer class="footer">
-      <div id="brand-and-contact-info-container">
-        <div id="brand-details">
-          <div class="dark-text brand-logo">Kalakriti: A Virtual Art Gallery</div>
-          <div id="brand-info">
-            Kalakriti by GCA is an online art gallery showcasing a vast collection of
-            art pieces from talented artists. Explore, appreciate, and engage
-            with art while staying updated on upcoming exhibitions and events
-            through our platform.
-          </div>
-        </div>
-        <div id="footer-info">
-          <div id="contact">
-            <div class="dark-text"><strong>Get in touch</strong></div>
-            <div id="location" class="contact-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <a>SPIT Andheri, Mumbai</a>
-            </div>
-            <div id="phone" class="contact-item">
-              <i class="fa-solid fa-phone"></i>
-              <a>9090909090</a>
-            </div>
-            <div id="email" class="contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <a>gca@kalakriti.in</a>
-            </div>
-            <div id="x-twitter" class="contact-item">
-              <i class="fa-brands fa-x-twitter"></i>
-              <a>gca_kalakriti</a>
-            </div>
-          </div>
-          <div id="links">
-            <div class="dark-text"><strong>Contact</strong></div>
-            <div class="link-item"><a href="/about-us" data-link>About Us</a></div>
-            <div class="link-item"><a href="/contact-us" data-link>Contact Us</a></div>
-            <div class="link-item"><a href="/upcoming-events" data-link>Upcoming Events</a></div>
-          </div>
+  <footer class="footer">
+    <div id="brand-and-contact-info-container">
+      <div id="brand-details">
+        <div class="dark-text brand-logo">Kalakriti: A Virtual Art Gallery</div>
+        <div id="brand-info">
+          Kalakriti by GCA is an online art gallery showcasing a vast collection of
+          art pieces from talented artists. Explore, appreciate, and engage
+          with art while staying updated on upcoming exhibitions and events
+          through our platform.
         </div>
       </div>
-      <div class="dark-text">&copy; Kalakriti 2025</div>
-    </footer>
-  </body>
+      <div id="footer-info">
+        <div id="contact">
+          <div class="dark-text"><strong>Get in touch</strong></div>
+          <div id="location" class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <a>SPIT Andheri, Mumbai</a>
+          </div>
+          <div id="phone" class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a>9090909090</a>
+          </div>
+          <div id="email" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a>gca@kalakriti.in</a>
+          </div>
+          <div id="x-twitter" class="contact-item">
+            <i class="fa-brands fa-x-twitter"></i>
+            <a>gca_kalakriti</a>
+          </div>
+        </div>
+        <div id="links">
+          <div class="dark-text"><strong>Contact</strong></div>
+          <div class="link-item"><a href="/about-us" data-link>About Us</a></div>
+          <div class="link-item"><a href="/contact-us" data-link>Contact Us</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-text">&copy; Kalakriti 2025</div>
+  </footer>
+</body>
+
 </html>
