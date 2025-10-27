@@ -2,7 +2,7 @@ viewArt();
 async function viewArt() {
     const detailsDiv = document.getElementById("art-details");
     const contentDiv = document.getElementById("art-details-content");
-    const main = document.querySelector('nav + main');
+    const main = document.querySelector('main');
 
     if (!detailsDiv || !contentDiv) {
         console.error("Missing art details container in DOM");
